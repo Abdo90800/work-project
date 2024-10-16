@@ -25,7 +25,7 @@ export default function LocalSwitcher() {
     <label className='border-2 rounded'>
       <select
         defaultValue={localeActive}
-        className='bg-transparent py-2'
+        className='py-2 bg-transparent'
         onChange={onSelectChange}
         disabled={isPending}
         aria-label="Select language"

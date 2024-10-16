@@ -5,6 +5,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import LocalSwitcher from "./LocalSwitcher";
+import { useTranslations } from "next-intl";
 
 function Header() {
   const [drink, setDrink] = useState("LOGIN");
@@ -12,8 +13,10 @@ function Header() {
   const handleChange = (event) => {
     setDrink(event.target.value);
   };
+  const t = useTranslations("");
+
   return (
-    <header className="bg-white" >
+    <header className="bg-white">
       <div className="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-6 lg:px-8">
         <a className="block text-teal-600" href="#">
           <span className="sr-only">Home</span>
@@ -109,8 +112,8 @@ function Header() {
                   className="text-gray-500 transition hover:text-gray-500/75"
                   href="#"
                 >
-                  {" "}
-                  Home{" "}
+                  
+                {t("home")}
                 </a>
               </li>
 
@@ -120,7 +123,7 @@ function Header() {
                   href="#"
                 >
                   {" "}
-                  About Us{" "}
+                  {t("aboutus")}
                 </a>
               </li>
 
@@ -130,7 +133,7 @@ function Header() {
                   href="#"
                 >
                   {" "}
-                  Contact Us{" "}
+                  {t("contactus")}
                 </a>
               </li>
 
@@ -140,7 +143,7 @@ function Header() {
                   href="#"
                 >
                   {" "}
-                  Blogs{" "}
+                  {t("blogs")}
                 </a>
               </li>
             </ul>
@@ -148,22 +151,23 @@ function Header() {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-            <LocalSwitcher/>
+              <LocalSwitcher />
 
               <div className="">
                 <Select
                   value={drink}
                   onChange={handleChange}
-                  className="w-[144px] h-[40px] p-[8px] border-[1px  #6C788B] gap-[8px] bg-[#545F71] text-white rounded-[12px]"
+                  className="w-[144px] h-[41px] p-[8px] border-[1px  #6C788B] gap-[8px] bg-[#545F71] text-white rounded-[12px]"
                 >
                   <MenuItem value="LOGIN">
-                    <div className="flex items-center ">
-                      <FaRegUserCircle /> <span>LOG IN</span>
+                    <div className="flex items-center justify-center gap-2">
+                      <FaRegUserCircle size={22}/> <span className="text-[13px]">{t("login")}</span>
                     </div>
                   </MenuItem>
                   <MenuItem value="SIGNIN">
-                    <div className="flex items-center ">
-                      <FaRegUserCircle /> <span>SIGNIN</span>
+                    <div className="flex items-center justify-center gap-2">
+                      <FaRegUserCircle size={20} />{" "}
+                      <span className="text-[15px]">{t("signin")}</span>
                     </div>
                   </MenuItem>
                 </Select>
