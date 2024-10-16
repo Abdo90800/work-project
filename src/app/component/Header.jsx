@@ -154,7 +154,7 @@ function Header() {
                 <Select
                   value={drink}
                   onChange={handleChange}
-                  className="w-[144px] h-[40px] p-[8px] border-[1px  #6C788B] gap-[8px] bg-[#545F71] text-white rounded-[12px]"
+                  className="w-[144px] h-[41px] p-[8px] border-[1px  #6C788B] gap-[8px] bg-[#545F71] text-white rounded-[12px]"
                 >
                   <MenuItem value="LOGIN">
                     <div className="flex items-center ">
