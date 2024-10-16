@@ -1,6 +1,13 @@
 {
-    "HomePage": {
-        "title": "Hello world!",
-        "about": "Go to the about page"
-    }
+
+
+    "home": "HOME",
+    "about": "ABOUT",
+    "contactus": "CONTACT US",
+    "aboutus": "ABOUT US",
+    "login": "LOGIN",
+    "signin": "SIGNIN",
+    "blogs": "BLOGS"
+
+
 }
