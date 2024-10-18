@@ -27,7 +27,7 @@ function Header() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_2003_245)">
+            <g clipPath="url(#clip0_2003_245)">
               <path
                 d="M61.9378 40.2391C60.0557 40.3496 58.2053 39.7175 56.7843 38.4785C55.3632 37.2395 54.4848 35.4926 54.3378 33.613C54.3378 32.8304 54.1465 31.8739 55.2769 31.8739C56.4073 31.8739 57.016 31.8739 57.2247 33.213C57.816 36.187 58.9638 37.2478 61.1725 37.3174C61.9821 37.382 62.7927 37.205 63.5017 36.8087C64.2106 36.4124 64.7861 35.8147 65.1552 35.0913C65.5531 34.4159 65.7113 33.6258 65.604 32.8493C65.4966 32.0727 65.1301 31.3552 64.5639 30.813C61.8508 27.5956 58.5986 24.8826 55.6595 21.8913C54.4299 20.755 53.2684 19.5471 52.1812 18.2739C51.3109 17.2862 50.5955 16.172 50.0595 14.9695C49.7493 14.1209 49.5733 13.229 49.5378 12.3261C49.5071 12.1541 49.5114 11.9778 49.5502 11.8075C49.5891 11.6372 49.6617 11.4765 49.7638 11.3348C49.8605 11.2505 49.9744 11.1882 50.0975 11.1522C50.2206 11.1161 50.35 11.1072 50.4769 11.1261C50.6414 11.1525 50.7981 11.2144 50.9363 11.3075C51.0744 11.4006 51.1906 11.5227 51.2769 11.6652C53.4334 17.0565 58.2334 20.1174 62.0943 24.0652C63.6073 25.613 65.2595 27.0391 66.703 28.6565C67.6265 29.6252 68.225 30.8577 68.4152 32.1826C68.6053 33.5074 68.3776 34.8585 67.7638 36.0478C67.2802 37.2202 66.4783 38.2341 65.4488 38.9747C64.4193 39.7154 63.2031 40.1533 61.9378 40.2391Z"
                 fill="url(#paint0_linear_2003_245)"
@@ -74,10 +74,10 @@ function Header() {
                 y2="25.6826"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#7CCBB3" />
-                <stop offset="0.24" stop-color="#6FC2B7" />
-                <stop offset="0.7" stop-color="#4BACC2" />
-                <stop offset="1" stop-color="#309ACA" />
+                <stop stopColor="#7CCBB3" />
+                <stop offset="0.24" stopColor="#6FC2B7" />
+                <stop offset="0.7" stopColor="#4BACC2" />
+                <stop offset="1" stopColor="#309ACA" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_2003_245"
@@ -87,10 +87,10 @@ function Header() {
                 y2="16.1865"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#7CCBB3" />
-                <stop offset="0.24" stop-color="#6FC2B7" />
-                <stop offset="0.7" stop-color="#4BACC2" />
-                <stop offset="1" stop-color="#309ACA" />
+                <stop stopColor="#7CCBB3" />
+                <stop offset="0.24" stopColor="#6FC2B7" />
+                <stop offset="0.7" stopColor="#4BACC2" />
+                <stop offset="1" stopColor="#309ACA" />
               </linearGradient>
               <clipPath id="clip0_2003_245">
                 <rect
@@ -112,8 +112,7 @@ function Header() {
                   className="text-gray-500 transition hover:text-gray-500/75"
                   href="#"
                 >
-                  
-                {t("home")}
+                  {t("home")}
                 </a>
               </li>
 
@@ -161,7 +160,8 @@ function Header() {
                 >
                   <MenuItem value="LOGIN">
                     <div className="flex items-center justify-center gap-2">
-                      <FaRegUserCircle size={22}/> <span className="text-[13px]">{t("login")}</span>
+                      <FaRegUserCircle size={22} />{" "}
+                      <span className="text-[13px]">{t("login")}</span>
                     </div>
                   </MenuItem>
                   <MenuItem value="SIGNIN">
