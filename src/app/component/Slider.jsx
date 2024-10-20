@@ -13,7 +13,7 @@ function Slider() {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 10,
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -30,74 +30,31 @@ function Slider() {
   };
 
   const items = [
-    {
-      id: 1,
-      image: img,
-      title: "Category Name",
-    },
-    {
-      id: 2,
-      image: img1,
-      title: "Category Name",
-    },
-    {
-      id: 3,
-      image: img2,
-      title: "Category Name",
-    },
-    {
-      id: 4,
-      image: img3,
-      title: "Category Name",
-    },
-    {
-      id: 5,
-      image: img4,
-      title: "Category Name",
-    },
-    {
-      id: 6,
-      image: img,
-      title: "Category Name",
-    },
-    {
-      id: 7,
-      image: img1,
-      title: "Category Name",
-    },
-    {
-      id: 8,
-      image: img2,
-      title: "Category Name",
-    },
-    {
-      id: 9,
-      image: img3,
-      title: "Category Name",
-    },
-    {
-      id: 10,
-      image: img4,
-      title: "Category Name",
-    },
+    { id: 1, image: img, title: "Category Name" },
+    { id: 2, image: img1, title: "Category Name" },
+    { id: 3, image: img2, title: "Category Name" },
+    { id: 4, image: img3, title: "Category Name" },
+    { id: 5, image: img4, title: "Category Name" },
+    { id: 6, image: img, title: "Category Name" },
+    { id: 7, image: img1, title: "Category Name" },
+    { id: 8, image: img2, title: "Category Name" },
+    { id: 9, image: img3, title: "Category Name" },
+    { id: 10, image: img4, title: "Category Name" },
   ];
 
   return (
     <div className="flex items-center justify-center">
       <Carousel
         responsive={responsive}
-        className="mt-[50px] w-[1280px] container "
+        className="mt-[50px] sm:w-[1280px] "
       >
         {items.map((e, index) => (
-          <div key={index} className="">
+          <div key={index} className="flex flex-col items-center">
             <Image
               src={e.image}
-              alt={`Card image ${index}`}
-              width={200}
-              height={200}
-              className="rounded-full"
+              className="rounded-full w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px]"
             />
-            <p>Some content for card {index + 1}</p>
+            <p className="mt-2 text-center">Some content for card</p>
           </div>
         ))}
       </Carousel>

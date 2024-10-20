@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import "./style.css";
-import imgs1 from "../../../images/image 6.png";
+import imgs1 from "../../../images/image4.png";
 import { useTranslations } from "next-intl";
 
 // import required modules
