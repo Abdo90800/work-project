@@ -16,6 +16,7 @@ import { Pagination } from "swiper/modules";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import Button from "@mui/material/Button";
+import { Typography } from "@mui/material";
 
 function carousel() {
   const t = useTranslations("");
@@ -96,19 +97,8 @@ function carousel() {
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-grab">
             <Image src={imgs1} alt="Image 1" />
-            <Box
-              sx={{
-                position: "absolute",
-                top: "30%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                color: "white",
-                textAlign: "center",
-                width: "716px",
-                height: "164px",
-                gap: "16px",
-              }}
-            >
+
+            <Box className="absolute top-[30%] left-[50%] translate(-50%, -50%) text-center w-[716px] h-[164] gap-[16px]">
               <h1 className="text-[40px] font-[700]  text-[#FFFFFF]">
                 {t("Carosil2")}
               </h1>
