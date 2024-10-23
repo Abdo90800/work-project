@@ -54,7 +54,7 @@ function Slider() {
               src={e.image}
               className="rounded-full w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px]"
             />
-            <p className="mt-2 text-center">Some content for card</p>
+            <p className="mt-2 text-center">Some contentt for card</p>
           </div>
         ))}
       </Carousel>
