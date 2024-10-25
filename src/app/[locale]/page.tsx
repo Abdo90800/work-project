@@ -7,11 +7,13 @@ import Banner from "../component/Banner";
 import SliderCard from "../component/SliderCard";
 
 
+import OurPartners from "../component/OurPartners";
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
     <div>
       <h1>{t("title")}</h1>
+      <OurPartners />
       <Frames />
       <MainCards />
       <Caro />
