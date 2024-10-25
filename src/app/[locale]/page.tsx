@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import CardSwipper from "../component/MainCards"
+import MainCards from "../component/MainCards";
+import Frames from "../component/Frames";
 import Caro from "../component/Caro";
 import Slider from "../component/Slider";
 import Banner from "../component/Banner";
@@ -10,6 +11,9 @@ export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
     <div>
+      <h1>{t("title")}</h1>
+      <Frames />
+      <MainCards />
       <Caro />
       <Slider />
       <Banner />
