@@ -10,7 +10,7 @@ import { IoLogoInstagram } from "react-icons/io";
 const Footer = () => {
   return (
     <>
-      <footer className="grid grid-rows-2 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="grid grid-rows-2 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pb-5">
         <div className="footer-top grid grid-cols-[101px_287px_217px_217px_294px] justify-between gap-4">
           <div className="All flex flex-col">
             <div className="all-header mb-2">
