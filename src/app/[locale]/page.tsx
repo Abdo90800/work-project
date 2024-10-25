@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
-import CardSwipper from "../component/MainCards"
+import MainCards from "../component/MainCards";
+import Frames from "../component/Frames";
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
     <div>
       <h1>{t("title")}</h1>
-      <CardSwipper/>
-     
+      <Frames />
+      <MainCards />
     </div>
   );
 }
