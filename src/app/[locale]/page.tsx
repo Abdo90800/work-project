@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import CardSwipper from "../component/MainCards"
 import Caro from "../component/Caro";
 import Slider from "../component/Slider";
 import Banner from "../component/Banner";
@@ -13,7 +14,7 @@ export default function HomePage() {
       <Slider />
       <Banner />
       <SliderCard/>
-      
+     
     </div>
   );
 }
