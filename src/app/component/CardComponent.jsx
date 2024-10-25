@@ -1,69 +1,40 @@
-const Card = () => {
+import Image from "next/image";
+
+const CardComponent = ({product}) => {
   return (
-    <article className="rounded-xl border border-gray-700 bg-gray-800 p-4">
-      <div className="flex items-center gap-4">
-        <img
-          alt=""
-          src="https://images.unsplash.com/photo-1614644147724-2d4785d69962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-          className="size-16 rounded-full object-cover"
+    <article className="rounded-xl shadow-lg border border-[#D6D6D7] my-10 bg-white p-4 flex flex-col items-center lg:h-[251px] lg:w-[416px] relative text-center">
+      {/* User Photo */}
+      <div className="flex items-center absolute top-0 -translate-y-1/2 z-10 mx-auto">
+        <Image
+          alt="Photo"
+          src={product.photo}
+          className="rounded-full object-cover"
+          height={80}
+          width={80}
         />
-
-        <div>
-          <h3 className="text-lg font-medium text-white">Claire Mac</h3>
-
-          <div className="flow-root">
-            <ul className="-m-1 flex flex-wrap">
-              <li className="p-1 leading-none">
-                <a href="#" className="text-xs font-medium text-gray-300">
-                  Twitter
-                </a>
-              </li>
-
-              <li className="p-1 leading-none">
-                <a href="#" className="text-xs font-medium text-gray-300">
-                  GitHub
-                </a>
-              </li>
-
-              <li className="p-1 leading-none">
-                <a href="#" className="text-xs font-medium text-gray-300">
-                  Website
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
 
-      <ul className="mt-4 space-y-2">
-        <li>
-          <a
-            href="#"
-            className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
-          >
-            <strong className="font-medium text-white">Project A</strong>
+      {/* Stars Photo */}
+      <div className="mt-10 mb-0 z-0">
+        <Image alt="Rating" height={16} width={128} src={product.ratingImage} />
+      </div>
 
-            <p className="mt-1 text-xs font-medium text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              consequuntur deleniti, unde ab ut in!
-            </p>
-          </a>
+      {/* Card Description */}
+      <ul className="flex flex-col items-center justify-center gap-y-2 mt-4 ">
+        <li>
+          <p className="font-normal text-customGray text-sm px-2">
+            {product.description}
+          </p>
         </li>
-
+        <li className="my-2">
+          <h1 className="font-semibold text-base">{product.name}</h1>
+        </li>
         <li>
-          <a
-            href="#"
-            className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
-          >
-            <strong className="font-medium text-white">Project B</strong>
-
-            <p className="mt-1 text-xs font-medium text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              cumque saepe sit.
-            </p>
-          </a>
+          <p className="font-normal text-sm">{product.date}</p>
         </li>
       </ul>
     </article>
   );
 };
+
+export default CardComponent;
