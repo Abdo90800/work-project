@@ -1,5 +1,4 @@
-"use client"; // تأكد من وضع هذا في أعلى الملف
-
+"use client";
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +21,7 @@ const OurPartners = () => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
-        slidesPerView={6} // عدد الشرائح المعروضة في وقت واحد
+        slidesPerView={6}
       >
         <SwiperSlide>
           <img src="/images/Group.png" alt="Group" />
