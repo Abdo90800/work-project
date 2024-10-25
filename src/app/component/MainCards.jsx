@@ -25,20 +25,26 @@ const CardsSwipper = () => {
   }, []);
 
   return (
-    <Swiper
-      modules={[Navigation, Pagination]}
-      navigation
-      pagination={{ clickable: true }}
-      spaceBetween={30}
-      slidesPerView={3} 
-      className="max-w-screen-xl mx-auto px-2"
-    >
-      {CardsData.map((product, index) => (
-        <SwiperSlide key={index}>
-          <CardComponent product={product} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <section className="Swipper-Cards text-center">
+      <div className="title my-6">
+        <h1 className="font-bold text-xl text-customheader">What Our Client Says</h1>
+        <p className="font-medium text-sm text-customGray">Lorem ipsum dolor sit amet, consectetur elit</p>
+      </div>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        navigation
+        pagination={{ clickable: true }}
+        spaceBetween={30}
+        slidesPerView={3}
+        className="max-w-screen-xl mx-auto px-2"
+      >
+        {CardsData.map((product, index) => (
+          <SwiperSlide key={index}>
+            <CardComponent product={product} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 };
 
