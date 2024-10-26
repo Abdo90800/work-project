@@ -18,7 +18,7 @@ const CardsSwipper = () => {
         const data = response.data;
         SetCardsData(data);
       } catch (error) {
-        console.error(`Error Fetching CardData : ${error}`);
+        console.error(`Error Fetching CardData: ${error}`);
       }
     };
     getData();
@@ -39,8 +39,16 @@ const CardsSwipper = () => {
         navigation
         pagination={{ clickable: true }}
         spaceBetween={30}
-        slidesPerView={3}
-        className="max-w-screen-xl mx-auto px-2 "
+        slidesPerView={3} // عدد الشرائح في العرض الواحد
+        breakpoints={{
+          640: {
+            slidesPerView: 2, // عرض 2 شرائح للشاشات الصغيرة
+          },
+          768: {
+            slidesPerView: 3, // عرض 3 شرائح للشاشات المتوسطة والكبيرة
+          },
+        }}
+        className="max-w-screen-xl mx-auto px-2"
       >
         {CardsData.map((product, index) => (
           <SwiperSlide key={index}>
