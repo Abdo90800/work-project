@@ -9,7 +9,7 @@ import img2 from "../../../images/image 16.png"; // تأكد أن المسار �
 import img3 from "../../../images/image 18.png"; // تأكد أن المسار للصورة صحيح
 import img4 from "../../../images/image 18.png"; // تأكد أن المسار للصورة صحيح
 import Button from "@mui/material/Button";
-import { Typography } from "@mui/material";
+import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
 function Slider() {
   const responsive = {
@@ -23,7 +23,7 @@ function Slider() {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 4,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },

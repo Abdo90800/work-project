@@ -115,8 +115,6 @@ function NavBar() {
             </Menu>
           </Box>
 
-
-
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page, index) => (
               <Button
@@ -172,11 +170,5 @@ function NavBar() {
       </Container>
     </AppBar>
   );
-
-
-
-
-
-  
 }
 export default NavBar;
