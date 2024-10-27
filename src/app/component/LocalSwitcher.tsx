@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation';
 import { useTransition, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import egyptFlag from '../../../images/egypt.png';
-import englandFlag from '../../../images/england.png'; // تأكد من وجود علم إنجلترا هنا
+import egyptFlag from '../../../public/images/egypt.png';
+import englandFlag from '../../../public/images/England.png'; // تأكد من وجود علم إنجلترا هنا
 
 export default function LocalSwitcher() {
   const [isPending, startTransition] = useTransition();

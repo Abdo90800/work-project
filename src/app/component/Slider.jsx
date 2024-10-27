@@ -3,11 +3,11 @@
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import img from "../../../images/image 10.png"; // تأكد أن المسار للصورة صحيح
-import img1 from "../../../images/image 11.png"; // تأكد أن المسار للصورة صحيح
-import img2 from "../../../images/image 16.png"; // تأكد أن المسار للصورة صحيح
-import img3 from "../../../images/image 18.png"; // تأكد أن المسار للصورة صحيح
-import img4 from "../../../images/image 18.png"; // تأكد أن المسار للصورة صحيح
+import img from "../../../public/images/image 10.png"; // تأكد أن المسار للصورة صحيح
+import img1 from "../../../public/images/image 11.png"; // تأكد أن المسار للصورة صحيح
+import img2 from "../../../public/images/image 16.png"; // تأكد أن المسار للصورة صحيح
+import img3 from "../../../public/images/image 18.png"; // تأكد أن المسار للصورة صحيح
+import img4 from "../../../public/images/image 18.png"; // تأكد أن المسار للصورة صحيح
 import Button from "@mui/material/Button";
 import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";

@@ -2,9 +2,6 @@
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import img from "../../../images/card2.png"; // تأكد أن المسار للصورة صحيح
-// import img1 from "../../../images/card1.png"; // تأكد أن المسار للصورة صحيح
-// import img2 from "../../../images/card3.png"; // تأكد أن المسار للصورة صحيح
 import { RiDiscountPercentFill } from "react-icons/ri";
 import { CiHeart } from "react-icons/ci";
 import items from "../../data/item";

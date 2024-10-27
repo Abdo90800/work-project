@@ -18,12 +18,13 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import LocalSwitcher from "./LocalSwitcher";
 import Image from "next/image";
-import imag from "../../../images/PRINT.png";
+import imag from "../../../public/images/PRINT.png";
 import Select from "@mui/material/Select";
 import { FaRegUserCircle } from "react-icons/fa";
 import { PiShoppingCartSimpleThin } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
+import path from "path";
 
 function NavBar() {
   const t = useTranslations("");

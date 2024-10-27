@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import "./style.css";
-import imgs1 from "../../../images/image4.png";
+import imgs1 from "../../../public/images/image4.png";
 import { useTranslations } from "next-intl";
 
 // import required modules
@@ -16,8 +16,7 @@ import { Pagination } from "swiper/modules";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import Button from "@mui/material/Button";
-import { Typography } from "@mui/material";
-
+import Typography from '@mui/material/Typography';
 function carousel() {
   const t = useTranslations("");
 
