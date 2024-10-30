@@ -4,6 +4,7 @@ import Slider from "../component/Slider";
 import Banner from "../component/Banner";
 import SliderCard from "../component/SliderCard";
 
+
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Slider />
       <Banner />
       <SliderCard/>
+      
     </div>
   );
 }
