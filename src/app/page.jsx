@@ -2,7 +2,7 @@
 
 function page() {
   return (
-    <div>pageeeeeeeeeeee</div>
+    <div></div>
   )
 }
 
