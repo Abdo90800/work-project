@@ -1,5 +1,4 @@
 {
-
     "home": " الصفحه الرئيسيه ",
     "aboutus": "معلومات عنا",
     "contactus": " اتصل بنا ",
@@ -9,7 +8,19 @@
     "ExploreAll": "استكشاف الكل",
     "Carosil1": "مساحتك مع حلولنا الأنيقة",
     "Carosil2": "تحويل",
-    "Category Name": "اسم الفئة"
+    "Category Name": "اسم الفئة",
+    "Category button": "فئاتنا ",
+    "Discover": "اكتشف فئاتنا الرائعة لتحويل مساحتك",
+    "somecontent": "بعض المحتوى للبطاقة",
+    "Discover the Perfect": "اكتشف المثالي",
+    "Dressing Room for You": "غرفة الملابس المناسبة لك",
+    "Dressing Room": "غرف الملابس لدينا تجمع بين العملية والأناقة، لتوفر لك المساحة المثالية لعرض خزانة ملابسك. ",
+    "Packages": "عرض الحزم",
+    "View Packages": "عرض الحزم",
+    "View All": "عرض الكل",
+    "Order Now": "اطلب الان"
+
+
 
 
 }

@@ -11,7 +11,11 @@ import img4 from "../../../public/images/image 18.png"; // تأكد أن الم�
 import Button from "@mui/material/Button";
 import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
+import { useTranslations } from "next-intl";
+
 function Slider() {
+  const t = useTranslations("");
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -51,17 +55,17 @@ function Slider() {
 
   return (
     <>
-      <Box className="flex items-center justify-between mt-[50px] mx-20 mb-[15px]">
+      <Box className="flex items-center justify-between mt-[50px] mx-20 mb-[15px] flex-wrap">
         <Box>
           <Typography sx={{ fontSize: "20px", fontWeight: "700" }}>
-            Our Categories:
+          {t("Category button")}
           </Typography>
           <Typography sx={{ fontSize: "14px", fontWeight: "500", }} >
-            Discover our stunning Categories to transform your space.
+          {t("Discover")}.
           </Typography>
         </Box>
 
-        <Button sx={{background:"#545F71" , color:"white"}} className="w-[91px] rounded-[10px] ">View All</Button>
+        <Button sx={{background:"#545F71" , color:"white"}} className="w-[91px] rounded-[10px] ">{t("View All")}</Button>
       </Box>
       <div className="flex items-center justify-center">
         <Carousel responsive={responsive} className=" sm:w-[1280px] ">
@@ -71,7 +75,7 @@ function Slider() {
                 src={e.image}
                 className="rounded-full w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px]"
               />
-              <p className="mt-2 text-center">Some contentt for card</p>
+              <p className="mt-2 text-center">{t("somecontent")}</p>
             </div>
           ))}
         </Carousel>

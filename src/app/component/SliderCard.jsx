@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import { RiDiscountPercentFill } from "react-icons/ri";
 import { CiHeart } from "react-icons/ci";
 import items from "../../data/item";
+import { useTranslations } from "next-intl";
 
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -12,6 +13,8 @@ import Box from "@mui/material/Box";
 import Image from "next/image";
 import Link from "next/link";
 function Slider() {
+  const t = useTranslations("");
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -48,10 +51,11 @@ function Slider() {
       <Box className="flex items-center justify-between mt-[50px] mx-20 mb-[15px]">
         <Box>
           <Typography sx={{ fontSize: "20px", fontWeight: "700" }}>
-            Our Categories:
+          {t("Category button")}
+
           </Typography>
           <Typography sx={{ fontSize: "14px", fontWeight: "500" }}>
-            Discover our stunning Categories to transform your space.
+          {t("Discover")}.
           </Typography>
         </Box>
 
@@ -60,7 +64,7 @@ function Slider() {
             sx={{ background: "#545F71", color: "white" }}
             className="w-[91px] rounded-[10px]"
           >
-            View All
+        {t("View All")}
           </Button>
         </Link>
       </Box>
@@ -109,7 +113,7 @@ function Slider() {
                     type="button"
                     className="w-[116px] h-[40px] rounded-[10px]  bg-gray-900 px-4 py-3 text-sm font-medium text-white transition hover:scale-105"
                   >
-                    Order Now
+                {t("Order Now")}
                   </button>
                 </form>
               </div>
