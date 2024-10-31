@@ -1,0 +1,44 @@
+[
+  {
+    "photo": "/images/card-1.png",
+    "ratingImage": "/images/Rate.png",
+    "description": "“I absolutely love my new dressing room! It's spacious and well-designed.”",
+    "name": "Alexander Heffry",
+    "date": "12 May 2023"
+  },
+  {
+    "photo": "/images/card-2.png",
+    "ratingImage": "/images/Rate.png",
+    "description": "The service provided is incredible, the insights and knowledge that the team has let us increase The service provided is incredible”",
+    "name": "Savannah Nguyen",
+    "date": "12 May 2023"
+  },
+  {
+    "photo": "/images/card-3.png",
+    "ratingImage": "/images/Rate.png",
+    "description": "“I absolutely love my new dressing room! It's spacious, well-designed, and has plenty of storage for all my clothes and accessories.”",
+    "name": "Jerome Bell",
+    "date": "12 May 2023"
+  },
+  {
+    "photo": "/images/card-1.png",
+    "ratingImage": "/images/Rate.png",
+    "description": "“I absolutely love my new dressing room! It's spacious and well-designed.”",
+    "name": "Alexander Heffry",
+    "date": "12 May 2023"
+  },
+  {
+    "photo": "/images/card-2.png",
+    "ratingImage": "/images/Rate.png",
+    "description": "The service provided is incredible, the insights and knowledge that the team has let us increase The service provided is incredible”",
+    "name": "Savannah Nguyen",
+    "date": "12 May 2023"
+  },
+  {
+    "photo": "/images/card-3.png",
+    "ratingImage": "/images/Rate.png",
+    "description": "“I absolutely love my new dressing room! It's spacious, well-designed, and has plenty of storage for all my clothes and accessories.”",
+    "name": "Jerome Bell",
+    "date": "12 May 2023"
+  }
+]
