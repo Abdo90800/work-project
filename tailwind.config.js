@@ -14,6 +14,10 @@ module.exports = {
         customheader: " #545F71",
         formColor: " #252525",
       },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(0deg, #3EABCC, #3EABCC), linear-gradient(270.05deg, #5AE4CB -66.81%, #3EABCC 99.96%)",
+      },
     },
   },
   plugins: [],
