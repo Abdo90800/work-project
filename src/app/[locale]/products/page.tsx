@@ -2,11 +2,10 @@
 import TablePagination from "@mui/material/TablePagination";
 import { useState } from "react";
 import Container from "@mui/material/Container";
-import Filter from "./Filter";
-import Drower from "./Drower";
+import Filter from "../../component/filter";
+import Drower from "../../component/Drower";
 import Link from "next/link";
 
-import item from "../../data/item";
 
 export default function Page() {
   const [page, setPage] = useState(2);
