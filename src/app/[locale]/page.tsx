@@ -8,11 +8,9 @@ import OurPartners from "../component/OurPartners";
 import SliderCard from "../component/SliderCard";
 
 export default function HomePage() {
-  const t = useTranslations("HomePage");
   return (
     <div>
-      <h1>{t("title")}</h1>
-      <Caro />
+      {/* <Caro /> */}
       <Slider />
       <Banner />
       <SliderCard/>
