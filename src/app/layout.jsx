@@ -3,7 +3,7 @@ import React from 'react';
 import './globals.css'; // لو عندك ستايل عام
 
 export const metadata = {
-  title: 'عنوان الصفحة',
+  title: 'Glassteel',
   description: 'وصف الصفحة',
 };
 
