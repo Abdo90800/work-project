@@ -26,8 +26,10 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/app/[locale]/layout.tsx"  ],
+    "**/*.tsx",
+    "src/app/[locale]/layout.tsx",
+    "src/app/layout.jsx"
+, "src/app/filterProduct/layout.tsx"  ],
   "exclude": [
     "node_modules"
   ]
