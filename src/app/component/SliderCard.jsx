@@ -1,9 +1,9 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 import { CiHeart } from "react-icons/ci";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -63,7 +63,8 @@ function Slider() {
           <Typography
             sx={{ fontSize: "14px", fontWeight: "500", color: "#757575" }}
           >
-            Our products offer the perfect blend of customization, quality, and affordability.
+            Our products offer the perfect blend of customization, quality, and
+            affordability.
           </Typography>
         </Box>
 
@@ -104,7 +105,7 @@ function Slider() {
           }}
         >
           {items.map((e) => (
-            <SwiperSlide key={e.id} className="group relative">
+            <SwiperSlide key={e.id} className="relative group">
               <div className="relative block w-full lg:w-[416px] sm:w-[300px] rounded-[16px] gap-[8px] lg:h-[590px] md:h-[450px] sm:h-[300px]">
                 <div className="row-span-2">
                   <button className="absolute end-3 top-3 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -131,7 +132,8 @@ function Slider() {
                   <form className="flex">
                     <button
                       style={{
-                        background: "linear-gradient(to right, #5AE4CB, #3EABCC)",
+                        background:
+                          "linear-gradient(to right, #5AE4CB, #3EABCC)",
                       }}
                       type="button"
                       className="w-[116px] h-[40px] rounded-[10px] bg-gray-900 px-4 py-3 text-sm font-medium text-white transition hover:scale-105 ml-auto mr-2 mb-2"
