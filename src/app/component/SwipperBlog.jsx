@@ -4,12 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import { CiHeart } from "react-icons/ci";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import Image from "next/image";
-import Link from "next/link";
 
 function SwipperBlog() {
   const items = [

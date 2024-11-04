@@ -2,7 +2,7 @@
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { useTranslations } from "next-intl";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,12 +10,13 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const OurPartners = () => {
+  const t = useTranslations("")
   return (
     <section className="our-partners max-w-screen-xl mx-auto py-5">
       <div className="title text-center mb-5">
-        <h1 className="font-bold text-xl text-customheader">Our Partners</h1>
+        <h1 className="font-bold text-xl text-customheader">{t("ourPartners")}</h1>
         <p className="font-medium text-sm text-customGray">
-          Lorem ipsum dolor sit amet, consectetur elit
+          {t("lorem")}
         </p>
       </div>
       <Swiper

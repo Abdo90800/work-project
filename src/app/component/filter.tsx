@@ -42,7 +42,7 @@ function Filter({ priceFilter }) {
           </button>
           <Image
             src={e.image}
-            alt=""
+            alt="img"
             className="object-cover w-full h-64 transition duration-500 group-hover:scale-105 sm:h-72"
           />
           <div className="relative p-6 bg-white border border-gray-100">
