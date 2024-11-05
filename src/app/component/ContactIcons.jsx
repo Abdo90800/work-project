@@ -4,7 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 const ContactIcons = () => {
   return (
     <section className="contact-icons bg-gray-100 ">
-      <div className="icons py-8 max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+      <div className="icons C">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-5">
           {/* Phone */}
           <div className="w-full h-auto p-5 bg-white rounded-xl flex gap-4 items-center shadow-lg">
