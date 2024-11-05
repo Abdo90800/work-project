@@ -3,7 +3,7 @@ const ContactHead = () => {
   return (
     <section className="contact-head max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
       <header className="my-8">
-        <h1 className="text-left text-customheader font-bold">Contact Us</h1>
+        <h1 className="text-left text-customheader font-bold text-[20px]">Contact Us</h1>
         <span className="border w-full border-[#EAEEF0] flex my-2"></span>
       </header>
 
