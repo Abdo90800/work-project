@@ -111,7 +111,7 @@ const Footer = () => {
                 <input
                   type="email"
                   className="w-full bg-transparent h-12 text-sm border-b-2 border-[#3AA6CD] rounded-none pl-3 pr-32 py-2 transition duration-300 ease focus:outline-none focus:border-transparent shadow-sm focus:shadow-none"
-                  placeholder={t("Email Address")}
+                  placeholder="Email Address"
                 />
                 <button
                   className="absolute right-0 top-0 -bottom-1 m-auto flex items-center justify-center border border-transparent text-center text-white transition-all shadow-sm hover:shadow focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-[91px] h-[40px] font-medium text-base"

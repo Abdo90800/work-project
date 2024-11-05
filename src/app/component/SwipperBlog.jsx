@@ -47,7 +47,7 @@ function SwipperBlog() {
 
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mb-10">
         <Swiper
           navigation
           modules={[Navigation]}
@@ -60,7 +60,7 @@ function SwipperBlog() {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 3, // ثلاث شرائح على الشاشات الكبيرة
+              slidesPerView: 4, // ثلاث شرائح على الشاشات الكبيرة
               spaceBetween: 30,
             },
             1440: {
