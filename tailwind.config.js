@@ -13,11 +13,15 @@ module.exports = {
         customGray: "#757575",
         customheader: " #545F71",
         formColor: " #252525",
+        customgradient: 'linear-gradient(to right, #5AE4CB, #3EABCC)',
       },
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(0deg, #3EABCC, #3EABCC), linear-gradient(270.05deg, #5AE4CB -66.81%, #3EABCC 99.96%)",
       },
+      
+        
+      
     },
   },
   plugins: [],

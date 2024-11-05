@@ -7,10 +7,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-
+import { useTranslations } from "next-intl";
 const CardsSwipper = () => {
   const [CardsData, SetCardsData] = useState([]);
-
+  const t = useTranslations("")
   useEffect(() => {
     const getData = async () => {
       try {
@@ -28,10 +28,10 @@ const CardsSwipper = () => {
     <section className="Swipper-Cards text-center bg-[#F6F6F6] pb-6 mb-10">
       <div className="title py-8">
         <h1 className="font-bold text-xl text-customheader">
-          What Our Client Says
+          {t("ourClient")}
         </h1>
         <p className="font-medium text-sm text-customGray">
-          Lorem ipsum dolor sit amet, consectetur elit
+         {t("lorem")}
         </p>
       </div>
       <Swiper
