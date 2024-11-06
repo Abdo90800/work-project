@@ -6,22 +6,18 @@ import Slider from "../component/Slider";
 import Banner from "../component/Banner";
 import OurPartners from "../component/OurPartners";
 import SliderCard from "../component/SliderCard";
-
+// import Container from '@mui/material/Container';
 export default function HomePage() {
   return (
     <div>
-      <div className="mt-10">
-        <Caro />
-      </div>
+      <Caro />
       <Slider />
       <Banner />
-      <SliderCard/>
+      <SliderCard />
       <OurPartners />
       <SliderCard />
       <Frames />
       <MainCards />
-     
-     
     </div>
   );
 }
