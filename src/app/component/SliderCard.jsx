@@ -91,7 +91,7 @@ function Slider() {
               background:
                 "linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))",
               zIndex: 5,
-              pointerEvents: "none", // تعطيل التفاعل مع الظلال
+              pointerEvents: "none", 
             }}
           />
           <Swiper
