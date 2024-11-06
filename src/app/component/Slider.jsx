@@ -54,7 +54,7 @@ function Slider() {
   ];
 
   return (
-    <Container sx={{width:"100%"}}>
+    <Box sx={{width:"100%"}}>
       <Box className="flex items-center justify-between mt-[50px] mx-[10px] mb-[15px] flex-wrap  ">
         <Box>
           <Typography sx={{ fontSize: "20px", fontWeight: "700" }}>
@@ -113,7 +113,7 @@ function Slider() {
           }}
         />
       </div>
-    </Container>
+    </Box>
   );
 }
 
