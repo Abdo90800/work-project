@@ -25,6 +25,7 @@ import { CiHeart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import Nav1 from "./Nav1";
 import { useState } from "react";
+import Divider from '@mui/material/Divider';
 function NavBar() {
   const t = useTranslations("");
   const pages = [t("home"), t("aboutus"), t("contactus"), t("Blogs")];
@@ -60,7 +61,18 @@ function NavBar() {
             <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
               <Image width={128} height={44} src={imag} alt="Logo" />
             </Box>
-
+            <Divider
+              orientation="vertical"
+              flexItem
+              className="bg-[#EAEEF0] "
+              style={{
+                width: "1px",
+                height: "30px",
+                margin: "0 8px",
+                marginTop:"18px",
+                opacity: "0.3",
+              }}
+            />
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
@@ -130,7 +142,9 @@ function NavBar() {
                   {/* Divider */}
                   <span
                     className={`absolute left-0 right-0 bottom-0 h-1 rounded-full transition-all duration-300 ${
-                      activePage === page ? "bg-blue-500 rounded-t-l-[6px]"  : "bg-transparent"
+                      activePage === page
+                        ? "bg-gradient-to-r from-[#3EABCC] to-[#5AE4CB] rounded-bl-[6px] rounded-br-[6px]  h-[6px] rotate-0"
+                        : "bg-transparent"
                     }`}
                   ></span>
                 </Button>
@@ -144,10 +158,31 @@ function NavBar() {
               <Button>
                 <CiSearch className="text-[32px] text-black" />
               </Button>
-
+              <Divider
+                orientation="vertical"
+                flexItem
+                className="bg-[#EAEEF0]"
+                style={{
+                  width: "1px",
+                  height: "40px",
+                  margin: "0 8px",
+                  opacity: "0.3",
+                }}
+              />
               <Button>
                 <CiHeart className="text-[32px] text-black" />
               </Button>
+              <Divider
+                orientation="vertical"
+                flexItem
+                className="bg-[#EAEEF0]"
+                style={{
+                  width: "1px",
+                  height: "40px",
+                  margin: "0 8px",
+                  opacity: "0.3",
+                }}
+              />
               <Button>
                 <PiShoppingCartSimpleThin className="text-[32px] text-black" />
               </Button>

@@ -11,6 +11,7 @@ import Box from "@mui/material/Box";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Container from '@mui/material/Container';
 function Slider() {
   const items = [
     {
@@ -50,7 +51,7 @@ function Slider() {
       rate: "/images/ratingSwipper.png",
     },
   ];
-  const t = useTranslations("")
+  const t = useTranslations("");
   return (
     <>
       <section className="Slider Card bg-[#F6F6F6]">
@@ -78,7 +79,21 @@ function Slider() {
           </Link>
         </Box>
 
-        <div className="flex items-center justify-center">
+        <div className="relative flex items-center justify-center">
+          <Box
+            className="left-shadow"
+            sx={{
+              position: "absolute",
+              left: 0,
+              top: 0,
+              bottom: 0,
+              width: "100px",
+              background:
+                "linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))",
+              zIndex: 5,
+              pointerEvents: "none", // تعطيل التفاعل مع الظلال
+            }}
+          />
           <Swiper
             navigation
             modules={[Navigation]}
@@ -106,7 +121,7 @@ function Slider() {
           >
             {items.map((e) => (
               <SwiperSlide key={e.id} className="relative group">
-                <div className="relative block w-full lg:w-[416px] sm:w-[300px] rounded-[16px] gap-[8px] lg:h-[590px] md:h-[450px] sm:h-[300px]">
+                <Container className="relative block w-full lg:w-[416px] sm:w-[300px] rounded-[16px] gap-[8px] lg:h-[590px] md:h-[450px] sm:h-[300px]">
                   <div className="row-span-2">
                     <button className="absolute end-3 top-3 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
                       <span className="sr-only">Wishlist</span>
@@ -142,10 +157,24 @@ function Slider() {
                       </button>
                     </form>
                   </div>
-                </div>
+                </Container>
               </SwiperSlide>
             ))}
           </Swiper>
+          <Box
+            className="right-shadow"
+            sx={{
+              position: "absolute",
+              right: 0,
+              top: 0,
+              bottom: 0,
+              width: "150px",
+              background:
+                "linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))",
+              zIndex: 5,
+              pointerEvents: "none", // تعطيل التفاعل مع الظلال
+            }}
+          />
         </div>
       </section>
     </>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 function Nav1() {
   return (
@@ -10,7 +11,7 @@ function Nav1() {
         $120 OFF your new design limited time offer
     </span>
       <span>
-        g
+<IoCloseCircleOutline width={18} className='text-[18px] text-[#FFFFFF]'/>
       </span>
       </div>
   )
